@@ -14,10 +14,10 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[#F2F1E9] backdrop-blur-sm border-b border-gray-200">
       <nav className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
-          <a href="#" className="text-xl font-bold text-gray-800">
+          <a href="#" className="text-xl font-bold text-[#4A463F]">
             Psicóloga Micaela Yael Sebo
           </a>
 
@@ -26,7 +26,7 @@ const Header = () => {
             <li>
               <button 
                 onClick={() => scrollToSection('inicio')}
-                className="text-gray-600 hover:text-blue-600 transition-colors font-medium"
+                className="text-[#7D776D] hover:text-[#4A463F] transition-colors font-medium"
               >
                 Inicio
               </button>
@@ -34,7 +34,7 @@ const Header = () => {
             <li>
               <button 
                 onClick={() => scrollToSection('sobre-mi')}
-                className="text-gray-600 hover:text-blue-600 transition-colors font-medium"
+                className="text-[#7D776D] hover:text-[#4A463F] transition-colors font-medium"
               >
                 Sobre Mí
               </button>
@@ -42,7 +42,7 @@ const Header = () => {
             <li>
               <button 
                 onClick={() => scrollToSection('servicios')}
-                className="text-gray-600 hover:text-blue-600 transition-colors font-medium"
+                className="text-[#7D776D] hover:text-[#4A463F] transition-colors font-medium"
               >
                 Servicios
               </button>
@@ -50,7 +50,7 @@ const Header = () => {
             <li>
               <button 
                 onClick={() => scrollToSection('enfoque')}
-                className="text-gray-600 hover:text-blue-600 transition-colors font-medium"
+                className="text-[#7D776D] hover:text-[#4A463F] transition-colors font-medium"
               >
                 Enfoque
               </button>
@@ -58,7 +58,7 @@ const Header = () => {
             <li>
               <button 
                 onClick={() => scrollToSection('contacto')}
-                className="text-gray-600 hover:text-blue-600 transition-colors font-medium"
+                className="text-[#7D776D] hover:text-[#4A463F] transition-colors font-medium"
               >
                 Contacto
               </button>
@@ -77,13 +77,13 @@ const Header = () => {
 
         {/* Menú Desplegable Móvil */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-gray-100 bg-white">
+          <div className="md:hidden py-4 border-t border-gray-100 bg-[#F2F1E9]">
             <ul className="flex flex-col gap-4">
               {['inicio', 'sobre-mi', 'servicios', 'enfoque', 'contacto'].map((section) => (
                 <li key={section}>
                   <button 
                     onClick={() => scrollToSection(section)}
-                    className="text-gray-600 hover:text-blue-600 transition-colors w-full text-left px-2 py-1 capitalize"
+                    className="text-[#7D776D] hover:text-[#4A463F] transition-colors w-full text-left px-2 py-1 capitalize"
                   >
                     {section.replace('-', ' ')}
                   </button>

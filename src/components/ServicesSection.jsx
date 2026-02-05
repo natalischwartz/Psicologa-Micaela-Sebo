@@ -26,18 +26,18 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section id="servicios" className="py-16 md:py-24 bg-white">
+    <section id="servicios" className="py-16 md:py-24 bg-[#F2F1E9]">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         
         {/* Encabezado de la Sección */}
         <div className="text-center mb-16">
-          <p className="text-blue-600 font-semibold uppercase tracking-widest text-sm mb-4">
+          <p className="text-[#4A463F] font-semibold uppercase tracking-widest text-sm mb-4">
             Servicios
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#4A463F] mb-6">
             ¿Cómo puedo ayudarte?
           </h2>
-          <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+          <p className="text-lg text-[#7D776D] max-w-2xl mx-auto">
             Ofrezco diferentes modalidades de atención adaptadas a tus necesidades específicas, 
             tanto de manera presencial como online.
           </p>
@@ -48,18 +48,18 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <div 
               key={index}
-              className="group p-8 bg-slate-50 rounded-2xl border border-slate-100 hover:bg-white hover:border-blue-200 hover:shadow-xl transition-all duration-300"
+              className="group p-8 bg-[#F2F1E9] rounded-2xl border border- [#E5E2D5] hover:bg-[#F2F1E9] hover:border-blue-200 hover:shadow-xl transition-all duration-300"
             >
               {/* Contenedor del Icono */}
-              <div className="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors duration-300">
-                <service.icon className="w-7 h-7 text-blue-600 group-hover:text-white transition-colors duration-300" />
+              <div className="w-14 h-14 bg-[#E5E2D5] rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#5E8D76] transition-colors duration-300">
+                <service.icon className="w-7 h-7 text-[#5E8D76] group-hover:text-[#F2F1E9] transition-colors duration-300" />
               </div>
               
               <h3 className="text-xl font-bold text-slate-900 mb-4">
                 {service.title}
               </h3>
               
-              <p className="text-slate-600 leading-relaxed">
+              <p className="text-[#7D776D] leading-relaxed">
                 {service.description}
               </p>
             </div>

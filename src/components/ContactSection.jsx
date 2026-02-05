@@ -33,18 +33,18 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contacto" className="py-16 md:py-24 bg-slate-50">
+    <section id="contacto" className="py-16 md:py-24 bg-[#F2F1E9]">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         
         {/* Encabezado */}
         <div className="text-center mb-16">
-          <p className="text-blue-600 font-semibold uppercase tracking-widest text-sm mb-4">
+          <p className="text-[#4A463F] font-semibold uppercase tracking-widest text-sm mb-4">
             Contacto
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#4A463F] mb-6">
             Agenda tu Primera Consulta
           </h2>
-          <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+          <p className="text-lg text-[#7D776D] max-w-2xl mx-auto">
             Da el primer paso hacia tu bienestar. Completa el formulario y me pondré 
             en contacto contigo para agendar una cita.
           </p>
@@ -55,8 +55,8 @@ const ContactSection = () => {
           {/* Información de Contacto */}
           <div className="space-y-8">
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                <Phone className="w-5 h-5 text-blue-600" />
+              <div className="w-12 h-12 bg-[#E5E2D5] rounded-lg flex items-center justify-center flex-shrink-0">
+                <Phone className="w-5 h-5 text-[#5E8D76]" />
               </div>
               <div>
                 <h3 className="text-lg font-bold text-slate-900 mb-1">Teléfono</h3>
@@ -65,8 +65,8 @@ const ContactSection = () => {
             </div>
 
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                <Mail className="w-5 h-5 text-blue-600" />
+              <div className="w-12 h-12 bg-[#E5E2D5] rounded-lg flex items-center justify-center flex-shrink-0">
+                <Mail className="w-5 h-5 text-[#5E8D76]" />
               </div>
               <div>
                 <h3 className="text-lg font-bold text-slate-900 mb-1">Email</h3>
@@ -75,8 +75,8 @@ const ContactSection = () => {
             </div>
 
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                <MapPin className="w-5 h-5 text-blue-600" />
+              <div className="w-12 h-12 bg-[#E5E2D5] rounded-lg flex items-center justify-center flex-shrink-0">
+                <MapPin className="w-5 h-5 text-[#5E8D76]" />
               </div>
               <div>
                 <h3 className="text-lg font-bold text-slate-900 mb-1">Consultorio</h3>
@@ -85,8 +85,8 @@ const ContactSection = () => {
             </div>
 
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                <Clock className="w-5 h-5 text-blue-600" />
+              <div className="w-12 h-12 bg-[#E5E2D5] rounded-lg flex items-center justify-center flex-shrink-0">
+                <Clock className="w-5 h-5 text-[#5E8D76]" />
               </div>
               <div>
                 <h3 className="text-lg font-bold text-slate-900 mb-1">Horarios</h3>
@@ -98,7 +98,7 @@ const ContactSection = () => {
           {/* Formulario */}
           <form 
             onSubmit={handleSubmit} 
-            className="bg-white p-8 rounded-2xl shadow-xl border border-slate-100"
+            className="bg-[#F2F1E9] p-8 rounded-2xl shadow-xl border border-slate-100"
           >
             <div className="space-y-5">
               <div>
@@ -112,7 +112,7 @@ const ContactSection = () => {
                   value={formData.nombre}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+                  className="w-full px-4 py-3 bg-[#F2F1E9] border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
                   placeholder="Tu nombre"
                 />
               </div>
@@ -128,7 +128,7 @@ const ContactSection = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+                  className="w-full px-4 py-3 bg-[#F2F1E9] border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
                   placeholder="tu@email.com"
                 />
               </div>
@@ -143,7 +143,7 @@ const ContactSection = () => {
                   name="telefono"
                   value={formData.telefono}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+                  className="w-full px-4 py-3 bg-[#F2F1E9] border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
                   placeholder="+52 55 1234 5678"
                 />
               </div>
@@ -159,7 +159,7 @@ const ContactSection = () => {
                   onChange={handleChange}
                   required
                   rows={4}
-                  className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all resize-none"
+                  className="w-full px-4 py-3 bg-[#F2F1E9] border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all resize-none"
                   placeholder="Cuéntame brevemente el motivo de tu consulta..."
                 />
               </div>
@@ -167,7 +167,7 @@ const ContactSection = () => {
               <Button 
                 type="submit" 
                 disabled={isSubmitting}
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-lg shadow-lg transition-all transform active:scale-[0.98]"
+                className="w-full bg-[#5E8D76] hover:bg-[#3A5A4A] text-white font-bold py-4 rounded-lg shadow-lg transition-all transform active:scale-[0.98]"
               >
                 {isSubmitting ? 'Enviando...' : 'Enviar Mensaje'}
               </Button>

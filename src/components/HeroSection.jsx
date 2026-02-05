@@ -27,16 +27,16 @@ const HeroSection = () => {
       {/* Contenido Principal */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8 w-full pt-20">
         <div className="max-w-2xl">
-          <p className="text-blue-600 uppercase tracking-[0.2em] text-sm font-semibold mb-4  animate-in fade-in duration-1000">
+          <p className="text-[#4A463F] uppercase tracking-[0.2em] text-sm font-semibold mb-4  animate-in fade-in duration-1000">
             Psicóloga · Psicoanalista
           </p>
           
-          <h1 className="text-4xl md:text-6xl font-bold text-slate-900 mb-6 leading-tight  animate-in fade-in slide-in-from-bottom-5 duration-1000 animate-delay-[300ms] fill-mode-forwards">
+          <h1 className="text-4xl md:text-6xl font-bold text-[#4A463F] mb-6 leading-tight  animate-in fade-in slide-in-from-bottom-5 duration-1000 animate-delay-[300ms] fill-mode-forwards">
             Un espacio seguro para tu bienestar emocional
           </h1>
           
-          <p className="text-lg md:text-xl text-slate-600 mb-8 leading-relaxed animate-in fade-in slide-in-from-bottom-5 duration-1000 animate-delay-[700ms] fill-mode-forwards">
-            Te acompaño en un proceso de autoconocimiento profundo, donde podrás explorar 
+          <p className="text-lg md:text-xl text-[#7D776D] mb-8 leading-relaxed animate-in fade-in slide-in-from-bottom-5 duration-1000 animate-delay-[700ms] fill-mode-forwards">
+            Te acompaño en un proceso de autoconocimiento profundo, donde vas a poder explorar 
             tus emociones, superar conflictos internos y encontrar un mayor equilibrio en tu vida.
           </p>
           
@@ -44,7 +44,7 @@ const HeroSection = () => {
             <Button 
               size="lg" 
               onClick={() => scrollToSection('contacto')}
-              className="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-8 h-12 text-lg transition-all shadow-lg"
+              className="bg-[#5E8D76] hover:bg-[#3A5A4A] text-white rounded-xl px-8 h-12 text-lg transition-all shadow-lg"
             >
               Agendar Consulta
             </Button>
@@ -53,7 +53,7 @@ const HeroSection = () => {
               variant="outline" 
               size="lg" 
               onClick={() => scrollToSection('sobre-mi')}
-              className="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 rounded-full px-8 h-12 text-lg transition-all"
+              className="border-2 border-[#5E8D76] text-[#5E8D76]  rounded-xl px-8 h-12 text-lg transition-all bg-transparent"
             >
               Conocer Más
             </Button>

@@ -4,26 +4,26 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="py-10 bg-white border-t border-slate-200">
+    <footer className="py-10 bg-[#F2F1E9] border-t border-slate-200">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           
           {/* Nombre y Título */}
           <div className="text-center md:text-left">
-            <p className="text-lg font-bold text-slate-900">
+            <p className="text-lg font-bold text-[#4A463F]">
               Micaela Yael Sebo
             </p>
-            <p className="text-sm text-slate-500 font-medium uppercase tracking-wider">
+            <p className="text-sm text-[#7D776D] font-medium  tracking-wider">
               Psicóloga · Psicoanalista
             </p>
           </div>
           
           {/* Copyright y Cédula */}
           <div className="text-center md:text-right">
-            <p className="text-sm text-slate-600">
+            <p className="text-sm text-[#7D776D]">
               © {currentYear} Todos los derechos reservados.
             </p>
-            <p className="text-xs text-slate-400 mt-1">
+            <p className="text-xs text-[#7D776D] mt-1">
               Matrícula Nacional : 12345678
             </p>
           </div>
@@ -36,13 +36,13 @@ const Footer = () => {
             Diseño Profesional para Salud Mental
           </p>
 
-          <p className="text-xs text-slate-500">
+          <p className="text-xs text-[#7D776D]">
             Desarrollado por{" "}
             <a 
               href="https://portfolio-natali-schwartz.vercel.app/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="font-semibold text-blue-600 hover:text-blue-800 transition-colors underline-offset-4 hover:underline"
+              className="font-semibold text-[#7D776D] hover:text-blue-800 transition-colors underline-offset-4 hover:underline"
             >
               Natali Schwartz
             </a>
