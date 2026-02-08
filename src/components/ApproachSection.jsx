@@ -6,7 +6,7 @@ const ApproachSection = () => {
     <section id="enfoque" className="py-16 md:py-24 bg-[#5E8D76] text-white">
       <div className="max-w-4xl mx-auto px-4 md:px-8 text-center">
         {/* Icono de comillas decorativo */}
-        <Quote className="w-12 h-12 mx-auto mb-8 text-blue-200 opacity-50" />
+        <Quote className="w-12 h-12 mx-auto mb-8 text-[#F2F1E9] opacity-50" />
         
         <h2 className="text-3xl md:text-4xl font-bold mb-8">
           Mi Enfoque Terapéutico

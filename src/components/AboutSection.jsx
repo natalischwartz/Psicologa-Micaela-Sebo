@@ -1,6 +1,6 @@
 import React from 'react';
 // Asegúrate de que la ruta de la imagen sea correcta o usa una URL de prueba
-import portraitImage from '/foto-psicologa.webp'; 
+import portraitImage from '/foto-about.jpg'; 
 
 const AboutSection = () => {
   return (
