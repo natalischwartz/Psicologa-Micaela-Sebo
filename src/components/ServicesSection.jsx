@@ -5,22 +5,22 @@ const services = [
   {
     icon: Brain,
     title: 'Psicoanálisis Individual',
-    description: 'Un espacio de escucha profunda donde exploraremos tu inconsciente, tus sueños y patrones de comportamiento para lograr un mayor autoconocimiento.',
+    description: 'Desde una orientación psicoanalítica, ofrezco un espacio de escucha profunda orientado a la exploración del inconsciente, los sueños y los patrones de comportamiento, favoreciendo un mayor autoconocimiento.',
   },
   {
     icon: Heart,
     title: 'Terapia de Duelo',
-    description: 'Acompañamiento en procesos de pérdida y duelo, brindándote herramientas para transitar el dolor y encontrar nuevos significados.',
+    description: 'Acompañamiento en procesos de pérdida y duelo, ofreciendo un espacio de sostén y elaboración que permita transitar estas experiencias y construir nuevos sentidos.',
   },
-  {
-    icon: Users,
-    title: 'Terapia de Pareja',
-    description: 'Trabajo conjunto para mejorar la comunicación, resolver conflictos y fortalecer el vínculo afectivo entre ustedes.',
-  },
+  // {
+  //   icon: Users,
+  //   title: 'Terapia de Pareja',
+  //   description: 'Trabajo conjunto para mejorar la comunicación, resolver conflictos y fortalecer el vínculo afectivo entre ustedes.',
+  // },
   {
     icon: Sparkles,
     title: 'Manejo de Ansiedad',
-    description: 'Técnicas y estrategias para comprender y manejar la ansiedad, permitiéndote recuperar la calma y el bienestar en tu vida diaria.',
+    description: 'Trabajaremos en la comprensión de las manifestaciones de la ansiedad, explorando sus causas singulares y favoreciendo la elaboración psíquica para lograr una relación más habitable con el malestar en la vida cotidiana.',
   },
 ];
 

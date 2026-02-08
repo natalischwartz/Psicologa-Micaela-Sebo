@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 import { toast } from 'sonner';
+import { useForm, ValidationError } from '@formspree/react';
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -17,19 +18,41 @@ const ContactSection = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = async (e) => {
+ const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulación de envío
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    toast.success('¡Mensaje enviado!', {
-      description: 'Me pondré en contacto contigo a la brevedad.',
-    });
-    
-    setFormData({ nombre: '', email: '', telefono: '', mensaje: '' });
-    setIsSubmitting(false);
+    // Reemplaza este ID con el que te dio Formspree
+    const FORMSPREE_ENDPOINT = "https://formspree.io/f/mwvnkgab";
+
+    try {
+      const response = await fetch(FORMSPREE_ENDPOINT, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        toast.success('¡Mensaje enviado!', {
+          description: 'Me estaré contactando con vos a la brevedad.',
+        });
+        // Limpiar el formulario
+        setFormData({ nombre: '', email: '', telefono: '', mensaje: '' });
+      } else {
+        toast.error('Error al enviar', {
+          description: 'Hubo un problema con el servidor. Intenta más tarde.',
+        });
+      }
+    } catch (error) {
+      toast.error('Error de conexión', {
+        description: 'Asegúrate de tener internet e intenta de nuevo.',
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -45,8 +68,7 @@ const ContactSection = () => {
             Agenda tu Primera Consulta
           </h2>
           <p className="text-lg text-[#7D776D] max-w-2xl mx-auto">
-            Da el primer paso hacia tu bienestar. Completa el formulario y me pondré 
-            en contacto contigo para agendar una cita.
+            Te invito a dar el primer paso. Completá el formulario y me estaré contactando con vos para coordinar tu primera entrevista.
           </p>
         </div>
 
@@ -60,7 +82,7 @@ const ContactSection = () => {
               </div>
               <div>
                 <h3 className="text-lg font-bold text-slate-900 mb-1">Teléfono</h3>
-                <p className="text-slate-600">+52 55 1234 5678</p>
+                <p className="text-slate-600">+54 9 11 5639 5588</p>
               </div>
             </div>
 
@@ -70,7 +92,7 @@ const ContactSection = () => {
               </div>
               <div>
                 <h3 className="text-lg font-bold text-slate-900 mb-1">Email</h3>
-                <p className="text-slate-600">contacto@dramariaruiz.com</p>
+                <p className="text-slate-600">micaelasebo27@gmail.com</p>
               </div>
             </div>
 
@@ -80,7 +102,7 @@ const ContactSection = () => {
               </div>
               <div>
                 <h3 className="text-lg font-bold text-slate-900 mb-1">Consultorio</h3>
-                <p className="text-slate-600">Av. Reforma 123, Col. Juárez<br />Ciudad de México, CDMX</p>
+                <p className="text-slate-600">Flores, C.A.B.A</p>
               </div>
             </div>
 
@@ -99,6 +121,8 @@ const ContactSection = () => {
           <form 
             onSubmit={handleSubmit} 
             className="bg-[#F2F1E9] p-8 rounded-2xl shadow-xl border border-slate-100"
+            action="https://formspree.io/f/mwvnkgab"
+            method="POST"
           >
             <div className="space-y-5">
               <div>
@@ -144,7 +168,7 @@ const ContactSection = () => {
                   value={formData.telefono}
                   onChange={handleChange}
                   className="w-full px-4 py-3 bg-[#F2F1E9] border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
-                  placeholder="+52 55 1234 5678"
+                  placeholder="+54 9 112 345 6789"
                 />
               </div>
 
@@ -160,7 +184,7 @@ const ContactSection = () => {
                   required
                   rows={4}
                   className="w-full px-4 py-3 bg-[#F2F1E9] border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all resize-none"
-                  placeholder="Cuéntame brevemente el motivo de tu consulta..."
+                  placeholder="Contame brevemente el motivo de tu consulta..."
                 />
               </div>
 

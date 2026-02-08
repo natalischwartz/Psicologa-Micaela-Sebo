@@ -24,7 +24,7 @@ const Footer = () => {
               © {currentYear} Todos los derechos reservados.
             </p>
             <p className="text-xs text-[#7D776D] mt-1">
-              Matrícula Nacional : 12345678
+              M.N : 83115
             </p>
           </div>
 

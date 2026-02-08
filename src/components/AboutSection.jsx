@@ -35,23 +35,20 @@ const AboutSection = () => {
             
             <div className="space-y-4 text-[#7D776D] leading-relaxed">
               <p>
-                Soy psicóloga clínica y psicoanalista con más de 15 años de experiencia 
-                acompañando a personas en su proceso de crecimiento personal y bienestar emocional.
+                Soy Psicóloga graduada en la Universidad de Buenos Aires, con experiencia clínica en acompañamiento terapéutico y residencias geriátricas, dedicada a una escucha profesional con orientación interdisciplinaria, respetando la subjetividad y la singularidad de cada paciente.
               </p>
               <p>
-                Mi formación incluye una Licenciatura en Psicología, una Maestría en Psicoanálisis 
-                y múltiples especializaciones en trauma, duelo y terapia de pareja.
+                Formación de grado en Psicología obtenida con honores en la Universidad de Buenos Aires.
               </p>
               <p className="font-medium text-[#4A463F] italic">
-                "Creo firmemente en que cada persona tiene dentro de sí los recursos necesarios 
-                para superar sus dificultades. Mi rol es acompañarte a descubrirlos y potenciarlos."
+               "Creo firmemente que acompañar es crear un espacio donde lo que atraviesa a cada persona pueda decirse sin apuro y sin juicio, sosteniéndola mientras encuentra su propia manera de transitarlo."
               </p>
             </div>
             
             {/* Credenciales / Estadísticas */}
-            <div className="mt-10 grid grid-cols-2 gap-6">
+            {/* <div className="mt-10 grid grid-cols-2 gap-6">
               <div className="p-5">
-                <p className="text-lg text-[#5E8D76] mb-1">15+</p>
+                <p className="text-lg text-[#5E8D76] mb-1">5+</p>
                 <p className="text-base text-[#7D776D] font-normal tracking-tight">
                   Años de experiencia
                 </p>
@@ -62,7 +59,7 @@ const AboutSection = () => {
                   Pacientes atendidos
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
 
         </div>

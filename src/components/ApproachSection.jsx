@@ -14,14 +14,11 @@ const ApproachSection = () => {
         
         <div className="space-y-6 max-w-3xl mx-auto">
           <p className="text-lg md:text-xl leading-relaxed text-[#F2F1E9]">
-            Trabajo desde una perspectiva psicoanalítica, lo que significa que juntos exploraremos 
-            las raíces profundas de tus conflictos y malestares. No se trata solo de aliviar los síntomas, 
-            sino de comprender qué hay detrás de ellos.
+            Trabajo desde una perspectiva psicoanalítica, lo que implica un proceso de exploración de las raíces profundas de los conflictos y malestares. No se trata únicamente de aliviar los síntomas, sino de comprender qué se expresa a través de ellos.
           </p>
           
           <p className="text-lg md:text-xl leading-relaxed text-[#F2F1E9]">
-            El psicoanálisis nos permite acceder a aquello que permanece oculto en el inconsciente 
-            y que muchas veces determina nuestra forma de actuar, sentir y relacionarnos con los demás.
+           El psicoanálisis posibilita un acercamiento a aquello que permanece inconsciente y que, muchas veces, incide en nuestra manera de actuar, sentir y vincularnos con los demás.
           </p>
         </div>
 
@@ -31,7 +28,7 @@ const ApproachSection = () => {
             <div className="text-4xl font-black mb-2 text-[#F2F1E9]">01</div>
             <h3 className="text-xl font-semibold mb-2">Escucha Activa</h3>
             <p className="text-[#F2F1E9] text-sm">
-              Un espacio donde tu palabra tiene valor y significado.
+              Un espacio donde tu palabra tiene valor y significado propio.
             </p>
           </div>
 
@@ -47,7 +44,7 @@ const ApproachSection = () => {
             <div className="text-4xl font-black mb-2 text-[#F2F1E9]">03</div>
             <h3 className="text-xl font-semibold mb-2">Sin Juicios</h3>
             <p className="text-[#F2F1E9] text-sm">
-              Un ambiente de aceptación y comprensión genuina.
+              Un espacio terapéutico de aceptación y escucha.
             </p>
           </div>
         </div>
