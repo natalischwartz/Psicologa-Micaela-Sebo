@@ -6,6 +6,9 @@
   outline: 2px solid red;
 } */
 
+section{
+  overflow-x:hidden;
+}
 
 @layer base {
   :root {
